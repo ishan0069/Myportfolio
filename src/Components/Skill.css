@@ -1,0 +1,94 @@
+section#skill {
+  margin-top: 9rem;
+  margin-bottom: 5rem;
+  scroll-margin-top: 6rem;
+  text-align: center;
+}
+
+#skill h5 {
+  /* padding-top: 2.3rem; */
+  margin-bottom: 0.5rem;
+}
+
+#skill h2 {
+  margin-bottom: 3rem;
+}
+
+/* Card styling */
+.skill_card {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: none;
+  backdrop-filter: blur(1.5rem);
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  transition: var(--transition);
+  max-width: 25rem;
+  margin: 0 auto;
+}
+
+.skill_card .row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  gap: 1.2rem 2rem;
+  justify-items: center;  /* ✅ Center text inside columns */
+}
+
+.skill_card:hover {
+  backdrop-filter: blur(2rem);
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.skill_card h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+/* Skill items */
+ /* .skill_content { */
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; */
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem 2rem;
+  justify-items: start;
+} */
+ 
+.skill_grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem 2rem;
+  justify-items: center;
+}
+
+.skill_details {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  /* min-width: 10rem; Prevent items from shrinking too much */
+}
+
+.skill_details-icon {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin-top: -1.2rem;
+}
+
+.skill_details h4 {
+  margin: 0;
+  line-height: 1.2; /* tighter so it doesn't push small down too much */
+}
+
+.skill_details small {
+  font-size: 0.9rem;
+  color: var(--color-light);
+  display: block;
+}

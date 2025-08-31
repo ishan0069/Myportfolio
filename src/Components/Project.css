@@ -1,0 +1,56 @@
+section#project {
+  margin-top: 9rem;
+  text-align: center;
+}
+
+#project h5 {
+  padding-top: 3rem;
+}
+
+/* Card styling */
+.project_item {
+  background: none;
+  backdrop-filter: blur(1.5rem);
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  border: 2px solid transparent;
+  transition: var(--transition);
+  /* max-width: 100%; Bootstrap column handles width */
+  min-width: 280px;
+}
+
+.project_item:hover {
+  backdrop-filter: blur(2rem);
+  border-color: var(--color-primary-variant);
+}
+
+.project_item-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: 9rem;
+}
+
+.project_item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project_item h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.5rem 0 0.8rem;
+}
+
+.project_item-cta {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+/* .project_item-cta .btn {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 0.6rem;
+} */

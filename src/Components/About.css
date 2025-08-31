@@ -1,0 +1,102 @@
+section#about {
+    margin-top: 5rem;
+    scroll-margin-top: 6rem;
+    text-align: center;
+}
+
+#about h2 {
+  margin-bottom: 2rem;   /* adds breathing room between heading and cards */
+}
+
+/* Container and content spacing handled by Bootstrap */
+/* .about_me {
+    width: 100%;
+    max-width: 16rem;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        var(--color-primary),
+        transparent
+    );
+    display: grid;
+    place-items: center;
+    margin: 2rem auto;
+} */
+
+.about_me-image {
+    /* margin-bottom: 3rem; */
+    max-width: 280px;        /* keeps image size under control */
+    margin: 0 auto 2rem;     /* center it with spacing below */
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(8deg);
+    transition: var(--transition);
+}
+
+.about_me-image img {
+    width: 100%;             /* responsive inside container */
+    height: auto;
+    object-fit: cover;       /* crop instead of stretching */
+}
+
+.about_me-image:hover {
+    transform: rotate(0);
+}
+
+/* Cards styling */
+.about_cards {
+    display: flex;              /* Use flex for wrapping */
+    flex-wrap: wrap;            /* Allow wrapping on small screens */
+    gap: 1rem;
+    justify-content: center;
+}
+
+.about_card {
+    background: none;
+    backdrop-filter: blur(1.5rem);
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    flex: 1 1 10rem;            /* Flexible width for responsive cards */
+    transition: var(--transition);
+    min-width: 8rem;            /* Prevent shrinking too small */
+}
+
+.about_card:hover {
+    background: none;
+    backdrop-filter: blur(2rem);
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.about_icon {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about_card h5 {
+    font-size: 0.95rem;
+}
+
+.about_card small {
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+
+.about_content p {
+    margin: 2rem 0;
+    color: var(--color-light);
+    text-align: justify;         /* Optional: improves readability */
+}
+
+/* Remove layout-specific media queries as Bootstrap handles it */
+
+@media (max-width: 768px) {
+  #about h2 {
+    margin-bottom: 4rem;  /* extra space for small/medium screens */
+  }
+}

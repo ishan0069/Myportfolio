@@ -1,0 +1,64 @@
+section#contact {
+  margin-top: 13rem;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+#contact h5 {
+  padding-top: 3rem;
+}
+
+#contact h2 {
+  margin-bottom: 2.5rem;
+}
+
+/* Contact option card */
+.contact_option {
+  max-width: 305px;
+  margin: 0 auto;
+  background: none;
+  backdrop-filter: blur(1.5rem);
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  padding: 2rem 1.5rem;
+  transition: var(--transition);
+}
+
+.contact_option:hover {
+  backdrop-filter: blur(2rem);
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.contact_option-icon {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+/* form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-primary);
+  background: none;
+  color: var(--color-light);
+}
+
+form button {
+  display: inline-block;
+  width: auto;
+  padding: 0.6rem 2rem;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  align-self: center;
+} */
